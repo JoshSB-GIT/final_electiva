@@ -13,12 +13,6 @@ export class User {
 
   @Column({
     type: 'timestamp',
-    default: 1,
-  })
-  status: number;
-
-  @Column({
-    type: 'timestamp',
     default: () => 'CURRENT_TIMESTAMP',
   })
   createdAt: Date;
